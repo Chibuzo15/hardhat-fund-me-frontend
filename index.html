@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fund Me App</title>
+
+    <style>
+        .row {
+            display: flex;
+            gap: 10px;
+            margin: 7px;
+            box-sizing: border-box;
+            align-items: center;
+        }
+
+        button {
+            min-height: 34px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Frontend for HardHat fund me project</h2>
+    <div class="row">
+        <button id="connectButton">Connect</button>
+    </div>
+    <div class="row">
+        <button id="fundButton">Fund</button>
+        <button id="withdrawButton">Withdraw</button>
+    </div>
+    <div class="row">
+        <button id="balanceButton">Get Balance</button>
+        <div id="balance"></div>
+    </div>
+    <div>
+        <label for="fund">ETH Amount</label>
+        <input id="ethAmount" placeholder="0.1" />
+    </div>
+    <script type="module" src="./js/index.js">
+    </script>
+</body>
+
+</html>
